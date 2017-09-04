@@ -8,4 +8,7 @@ span.innerHTML=counter.toString();
 
 var nameInput=document.getElementById("name");
 var name=nameInput.value;
-
+var sumbit=document.getElementById("submit");
+submit.onclick=function (){
+    
+};
