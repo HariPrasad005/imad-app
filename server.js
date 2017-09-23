@@ -6,19 +6,6 @@ var app = express();
 app.use(morgan('combined'));
 const { Pool, Client } = require('pg')
 
-const pool = new Pool({
-  user: 'dbuser',
-  host: 'database.server.com',
-  database: 'mydb',
-  password: 'secretpassword',
-  port: 3211,
-})
-
-pool.query('SELECT NOW()', (err, res) => {
-  console.log(err, res)
-  pool.end()
-})
-
 
 
 app.get('/', function (req, res) {
